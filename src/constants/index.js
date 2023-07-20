@@ -4,33 +4,28 @@ import {
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
-  nodejs,
-  mongodb,
-  git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  threejs,
   blogzaan,
   bakeryweb,
   todoweb,
+  aerocasta,
+  shophub,
+  bankingSystem,
   ccfj,
   techzone,
   ubit,
-
   java,
   cProg,
   firebase,
   msoffice,
+  facebook, 
+  github, 
+  instagram, 
+  linkedin
 } from "../assets";
 
 export const navLinks = [
@@ -86,20 +81,20 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Java OOP",
-    icon: java,
+    name: "Firebase",
+    icon: firebase,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "git",
-    icon: git,
+    name: "Java OOP",
+    icon: java,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "C++",
+    icon: cProg,
   },
 ];
 
@@ -202,6 +197,50 @@ const skills = [
 
 const projects = [
   {
+    name: "Shophub",
+    description:
+      "Shophub is a modern React e-commerce web app demonstrating real-world frontend architecture, global state management, Firebase authentication, and a complete shopping flow with smooth UI animations.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: shophub,
+    live_link: "https://akshophub.netlify.app/",
+    source_code_link: "https://github.com/AzaanK-dev/Shophub-Ecommerce-Website-with-React-and-Firebase.git",
+  },
+  {
+    name: "Aerocasta",
+    description:
+      "A cutting-edge, responsive weather dashboard providing real-time updates and 7-day forecasts with a sleek glassmorphic design, detailed atmospheric data, global city search, and geolocation support.",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "openmetio",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: aerocasta,
+    live_link: "https://aerocasta.netlify.app/",
+    source_code_link: "https://github.com/AzaanK-dev/Aerocasta-Weather-Dashboard-with-TailwindCSS-and-JS",
+  },
+  {
     name: "Blogzaan",
     description:
       "A dynamic blog web application built with React, Firebase, Tailwind CSS, and AOS animations, allowing users to create, read, edit, and delete blog posts with a modern and responsive interface.",
@@ -220,12 +259,13 @@ const projects = [
       },
     ],
     image: blogzaan,
+    live_link: "https://blogzaan.netlify.app/",
     source_code_link: "https://github.com/AzaanK-dev/Blogs-Website-with-React-and-Firebase.git",
   },
   {
-    name: "Bakery website UI",
+    name: "BakersnBlessed - UI",
     description:
-      "A simple and elegant Bakery website user interface built using HTML and CSS.It features a modern layout with a homepage banner, product showcase, and a clean, responsive design to highlight bakery items attractively.",
+    "A simple and elegant Bakery website user interface built using HTML and CSS.It features a modern layout with a homepage banner, product showcase, and a clean, responsive design to highlight bakery items attractively.",
     tags: [
       {
         name: "html",
@@ -237,6 +277,7 @@ const projects = [
       }
     ],
     image: bakeryweb,
+    live_link: "https://bakersnblessed.netlify.app/",
     source_code_link: "https://github.com/AzaanK-dev/Bakery-Website-UI-with-html-css.git",
   },
   {
@@ -258,8 +299,56 @@ const projects = [
       },
     ],
     image: todoweb,
+    live_link: "https://moderntodolistweb.netlify.app/",
     source_code_link: "https://github.com/AzaanK-dev/Modern-Todo-list.git",
+  },
+  {
+    name: "Java Banking Console",
+    type: "console",
+    description:
+      "A Console-based OOP banking system in Java, simulating real-world operations with savings and current accounts, loans, admin and user menus, transaction tracking, and file-based data persistence.",
+    tags: [
+      {
+        name: "java",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "OOP",
+        color: "green-text-gradient",
+      },
+    ],
+    image: bankingSystem,
+    live_link: "",
+    source_code_link: "https://github.com/AzaanK-dev/OOP-Bank-Management-System",
   },
 ];
 
-export { services, technologies, qualifications, skills, projects };
+const socialLinks = [
+  {
+    name: "github",
+    icon: github,
+    url: "https://github.com/AzaanK-dev",
+    bg: "bg-[#3D3D3D]",
+  },
+  {
+    name: "linkedin",
+    icon: linkedin,
+    url: "https://www.linkedin.com/in/azaan-mehtab-khan-556a86369?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    bg: "bg-white",
+  },
+  {
+    name: "facebook",
+    icon: facebook,
+    url: "https://www.facebook.com/share/1ALvtCkrrB/",
+    bg: "bg-white",
+  },
+  {
+    name: "instagram",
+    icon: instagram,
+    url: "https://www.instagram.com/azaan.k_17?igsh=MTVuYWpqM2xmZjNzbA==",
+    bg: "bg-white",
+  },
+];
+
+
+export { services, technologies, qualifications, skills, projects, socialLinks };

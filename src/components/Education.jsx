@@ -82,4 +82,4 @@ const Qualification = () => {
   );
 };
 
-export default SectionWrapper(Qualification, "work");
+export default SectionWrapper(Qualification, "");

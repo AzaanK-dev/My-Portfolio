@@ -37,7 +37,7 @@ const SkillCard = ({
 
 const Skills = () => {
   return (
-    <div className="mt-12 bg-black-100 rounded-[20px]">
+    <div className="md:mt-12 bg-black-100 rounded-[20px]">
       <div className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[250px]`}>
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>What I Do Best</p>
@@ -45,7 +45,7 @@ const Skills = () => {
         </motion.div>
       </div>
 
-      <div className={`-mt-8 pb-14 ${styles.paddingX} flex flex-wrap gap-14`}>
+      <div className={`-mt-16 md:-mt-8 pb-14 ${styles.paddingX} flex flex-wrap gap-[14px] sm:gap-4 md:gap-14`}>
         {skills.map((skill, index) => (
           <SkillCard key={skill.name} index={index} {...skill} />
         ))}
@@ -54,4 +54,4 @@ const Skills = () => {
   );
 };
 
-export default SectionWrapper(Skills, "");
+export default SectionWrapper(Skills, "skills");

@@ -7,36 +7,33 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
 import html from "./tech/html.png";
+import css from "./tech/css.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
+import figma from "./tech/figma.png";
 import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
-
+import git from "./tech/git.png";
+import externalLink from "./tech/externalLink.png";
 import java from "./tech/java.png";
 import cProg from "./tech/cProg.png";
 import firebase from "./tech/firebase.png";
 import msoffice from "./tech/msoffice.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
 import ccfj from "./company/ccfj.png";
 import techzone from "./company/techzone.png";
 import ubit from "./company/ubit.png";
-import tesla from "./company/tesla.png";
 
+import shophub from "./shophub.png";
+import aerocasta from "./aerocasta.png"
 import blogzaan from "./blogzaan.png";
 import bakeryweb from "./bakeryweb.png";
 import todoweb from "./todoweb.png";
+import bankingSystem from "./bankingSystem.png";
+
+import linkedin from "./tech/linkedin.png";
+import facebook from "./tech/facebook.png";
+import instagram from "./tech/instagram.png";
 
 export {
   logo,
@@ -48,31 +45,27 @@ export {
   menu,
   close,
   css,
-  docker,
   figma,
   git,
+  externalLink,
   html,
   javascript,
-  mongodb,
-  nodejs,
   reactjs,
-  redux,
   tailwind,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  blogzaan,
-  bakeryweb,
-  todoweb,
-  ccfj,
-  techzone,
-  ubit,
-
   java,
   cProg,
   firebase,
   msoffice,
+  shophub,
+  aerocasta,
+  blogzaan,
+  bakeryweb,
+  todoweb,
+  bankingSystem,
+  ccfj,
+  techzone,
+  ubit,
+  linkedin,
+  instagram,
+  facebook
 };
