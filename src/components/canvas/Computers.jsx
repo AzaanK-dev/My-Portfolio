@@ -2,6 +2,7 @@ import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
+import StaticComputer from "D:\\My Portfolio\\Portfolio_doc\\src\\assets\\staticComputer.png";
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.glb");
@@ -13,8 +14,8 @@ const Computers = ({ isMobile }) => {
         position={[-20, 50, 10]}
         angle={0.12}
         penumbra={1}
-        intensity={0.6}  
-        castShadow={false} //  Disable shadows on mobile
+        intensity={0.6}
+        castShadow={false}
       />
       <pointLight intensity={0.5} />
       <primitive
@@ -39,22 +40,37 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    <Canvas
-      shadows={false}
-      dpr={[1, 1.5]} // ⬅ Lower DPR for mobile
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{
-        antialias: false,
-        powerPreference: "high-performance",
-        preserveDrawingBuffer: false,
-      }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
-        <Computers isMobile={isMobile} />
-      </Suspense>
-      <Preload all />
-    </Canvas>
+    <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px]">
+      {isMobile ? (
+        <img
+          src={StaticComputer}          // static computer image for mobile
+          alt="Static Computer"
+          className="absolute top-40 left-0 w-full h-full object-contain mt-28"
+        />
+      ) : (
+        <Canvas                              // 3d model for other devices
+          className="absolute top-0 left-0"
+          shadows={false}
+          dpr={[1, 1.5]}
+          camera={{ position: [20, 3, 5], fov: 25 }}
+          gl={{
+            antialias: false,
+            powerPreference: "high-performance",
+            preserveDrawingBuffer: false,
+          }}
+        >
+          <Suspense fallback={<CanvasLoader />}>
+            <OrbitControls
+              enableZoom={false}
+              maxPolarAngle={Math.PI / 2}
+              minPolarAngle={Math.PI / 2}
+            />
+            <Computers isMobile={false} />
+          </Suspense>
+          <Preload all />
+        </Canvas>
+      )}
+    </div>
   );
 };
 
