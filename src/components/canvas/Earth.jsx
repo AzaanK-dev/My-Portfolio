@@ -2,7 +2,7 @@ import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
-import StaticEarth from "D:\\My Portfolio\\Portfolio_doc\\src\\assets\\staticEarth.png"; 
+import StaticEarth from "../../assets/staticEarth.png"; 
 
 const Earth = () => {
   const earth = useGLTF("./planet/scene.glb");
