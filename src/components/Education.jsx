@@ -8,11 +8,11 @@ import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
-import { experiences } from "../constants";
+import { qualifications } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
-const ExperienceCard = ({ experience }) => {
+const QualificationCard = ({ qualification }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -20,32 +20,32 @@ const ExperienceCard = ({ experience }) => {
         color: "#fff",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-      date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
+      date={qualification.date}
+      iconStyle={{ background: qualification.iconBg }}
       icon={
-        <div className='flex justify-center items-center w-full h-full'>
+        <div className='flex justify-center items-center w-full h-full bg-white rounded-full'>
           <img
-            src={experience.icon}
-            alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
+            src={qualification.icon}
+            alt={qualification.company_name}
+            className='w-[90%] h-[90%] object-cover object-center'
           />
         </div>
       }
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+        <h3 className='text-white text-[24px] font-bold'>{qualification.title}</h3>
         <p
           className='text-secondary text-[16px] font-semibold'
           style={{ margin: 0 }}
         >
-          {experience.company_name}
+          {qualification.company_name}
         </p>
       </div>
 
       <ul className='mt-5 list-disc ml-5 space-y-2'>
-        {experience.points.map((point, index) => (
+        {qualification.points.map((point, index) => (
           <li
-            key={`experience-point-${index}`}
+            key={`qualification-point-${index}`}
             className='text-white-100 text-[14px] pl-1 tracking-wider'
           >
             {point}
@@ -56,7 +56,7 @@ const ExperienceCard = ({ experience }) => {
   );
 };
 
-const Experience = () => {
+const Qualification = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -70,10 +70,10 @@ const Experience = () => {
 
       <div className='mt-20 flex flex-col'>
         <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              experience={experience}
+          {qualifications.map((qualification, index) => (
+            <QualificationCard
+              key={`qualification-${index}`}
+              qualification={qualification}
             />
           ))}
         </VerticalTimeline>
@@ -82,4 +82,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Qualification, "work");

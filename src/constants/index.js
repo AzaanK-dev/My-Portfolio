@@ -19,10 +19,18 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  blogzaan,
+  bakeryweb,
+  todoweb,
+  ccfj,
+  techzone,
+  ubit,
+
+  java,
+  cProg,
+  firebase,
+  msoffice,
 } from "../assets";
 
 export const navLinks = [
@@ -42,22 +50,23 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer Intern",
+    title: "Frontend Web Developer",
     icon: web,
   },
   {
-    title: "React Developer intern",
+    title: "React Developer",
     icon: mobile,
   },
   {
-    title: "Frontend Developer",
+    title: "Software Developer",
     icon: backend,
   },
   {
-    title: "Software Developer Intern",
+    title: "UI Design Enthusiast",
     icon: creator,
   },
 ];
+
 
 const technologies = [
   {
@@ -77,8 +86,8 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Java OOP",
+    icon: java,
   },
   {
     name: "Tailwind CSS",
@@ -94,23 +103,23 @@ const technologies = [
   },
 ];
 
-const experiences = [
+const qualifications = [
   {
-    title: "Cadet College Fateh Jang",
-    company_name: "Fateh Jang, Rawalpindi",
-    icon: starbucks,
+    title: "UBIT, University of Karachi",
+    company_name: "Gulshan-e-Iqbal, Karachi",
+    icon: ubit,
     iconBg: "#383E56",
-    date: "August 2022 - July 2024",
+    date: "January 2025 - Present",
     points: [
-      "Completed Pre-Engineering from Cadet College Fateh Jang, a reputed residential institution known for academic excellence and discipline.",  
-      "Secured 86% marks in HSSC (FSc Pre-Engineering), with a strong performance in Mathematics.",
-      "Gained valuable experience in leadership, discipline, and teamwork through cadet-based educational and extracurricular activities." 
+      "Pursuing a Bachelor's degree in Software Engineering from University of Karachi.",
+      "Developing a solid understanding of both theoretical and practical aspects of software engineering.",
+      "Actively enhancing technical and teamwork skills through academic projects, assignments, and collaborative learning.",
     ],
   },
   {
     title: "Techzone Learning Institute",
     company_name: "Sharah-e-Faisal, Karachi",
-    icon: tesla,
+    icon: techzone,
     iconBg: "#E6DEDD",
     date: "October 2024 - May 2025",
     points: [
@@ -120,58 +129,89 @@ const experiences = [
     ],
   },
   {
-    title: "UBIT, University of Karachi",
-    company_name: "Gulshan-e-Iqbal, Karachi",
-    icon: shopify,
+    title: "Cadet College Fateh Jang",
+    company_name: "Fateh Jang, Rawalpindi",
+    icon: ccfj,
     iconBg: "#383E56",
-    date: "January 2025 - Present",
+    date: "August 2022 - July 2024",
     points: [
-      "Pursuing a Bachelor's degree in Software Engineering from University of Karachi.",
-      "Developing a solid understanding of both theoretical and practical aspects of software engineering.",
-      "Actively enhancing technical and teamwork skills through academic projects, assignments, and collaborative learning.",
+      "Completed Pre-Engineering from Cadet College Fateh Jang, a reputed residential institution known for academic excellence and discipline.",  
+      "Secured 86% marks in HSSC (FSc Pre-Engineering), with a strong performance in Mathematics.",
+      "Gained valuable experience in leadership, discipline, and teamwork through cadet-based educational and extracurricular activities." 
     ],
   },
 ];
 
-const testimonials = [
+const skills = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    skill: "Building beautiful, responsive, and modern websites using semantic HTML for structured layouts.",
+    name: "HTML",
+    proficiency: "Expert",
+    image: html,
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    skill: "Crafting stylish, responsive designs and smooth UI experiences using CSS & Tailwind.",
+    name: "CSS & Tailwind",
+    proficiency: "Expert",
+    image: css,
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    skill: "Creating dynamic, interactive, and efficient web apps with modern JavaScript practices.",
+    name: "JavaScript",
+    proficiency: "Advanced",
+    image: javascript,
+  },
+  {
+    skill: "Developing scalable and reusable components with React and state management techniques.",
+    name: "React.js",
+    proficiency: "Advanced",
+    image: reactjs,
+  },
+  {
+    skill: "Implementing secure authentication, real-time data, and backend services using Firebase.",
+    name: "Firebase",
+    proficiency: "Intermediate",
+    image: firebase,
+  },
+  {
+    skill: "Applying OOP principles and strong problem-solving to create efficient Java applications.",
+    name: "Java OOP",
+    proficiency: "Intermediate",
+    image: java,
+  },
+  {
+    skill: "Developing logical programs and mastering problem-solving with C++ fundamentals.",
+    name: "C++",
+    proficiency: "Intermediate",
+    image: cProg,
+  },
+  {
+    skill: "Designing UI prototypes and wireframes to visualize project ideas with Figma.",
+    name: "Figma",
+    proficiency: "Beginner",
+    image: figma,
+  },
+  {
+    skill: "Efficient document management, spreadsheet operations, and presentation designs using MS Office.",
+    name: "MS Office",
+    proficiency: "Advanced",
+    image: msoffice,
   },
 ];
 
+
 const projects = [
   {
-    name: "Car Rent",
+    name: "Blogzaan",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A dynamic blog web application built with React, Firebase, Tailwind CSS, and AOS animations, allowing users to create, read, edit, and delete blog posts with a modern and responsive interface.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
@@ -179,51 +219,47 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: blogzaan,
+    source_code_link: "https://github.com/AzaanK-dev/Blogs-Website-with-React-and-Firebase.git",
   },
   {
-    name: "Job IT",
+    name: "Bakery website UI",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A simple and elegant Bakery website user interface built using HTML and CSS.It features a modern layout with a homepage banner, product showcase, and a clean, responsive design to highlight bakery items attractively.",
     tags: [
       {
-        name: "react",
+        name: "html",
         color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
       },
       {
         name: "css",
+        color: "green-text-gradient",
+      }
+    ],
+    image: bakeryweb,
+    source_code_link: "https://github.com/AzaanK-dev/Bakery-Website-UI-with-html-css.git",
+  },
+  {
+    name: "Modern todo-list",
+    description:
+      "A stylish and responsive To-Do List web app built using HTML, CSS, and JavaScript, featuring a clean UI, smooth interactions, and efficient task management for better productivity.",
+    tags: [
+      {
+        name: "html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: todoweb,
+    source_code_link: "https://github.com/AzaanK-dev/Modern-Todo-list.git",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, qualifications, skills, projects };
