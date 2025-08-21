@@ -54,24 +54,36 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    <Canvas
-      frameloop="demand"
-      shadows
-      dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Computers isMobile={isMobile} />
-      </Suspense>
+   <Canvas
+  frameloop="demand"
+  shadows
+  dpr={[1, 1.5]} // ↓ Limit resolution for better performance
+  camera={{ position: [20, 3, 5], fov: 25 }}
+  gl={{
+    preserveDrawingBuffer: false,   // ↓ Free GPU memory (important)
+    powerPreference: "high-performance",
+    antialias: false,               // ↓ Reduce GPU stress
+    failIfMajorPerformanceCaveat: true // Avoids using slow WebGL implementations
+  }}
+  onCreated={({ gl }) => {
+    gl.getContext().canvas.addEventListener("webglcontextlost", (e) => {
+      e.preventDefault();
+      alert("WebGL context lost! Reloading...");
+      window.location.reload(); // Auto reload if context dies
+    });
+  }}
+>
+  <Suspense fallback={<CanvasLoader />}>
+    <OrbitControls
+      enableZoom={false}
+      maxPolarAngle={Math.PI / 2}
+      minPolarAngle={Math.PI / 2}
+    />
+    <Computers isMobile={isMobile} />
+  </Suspense>
 
-      <Preload all />
-    </Canvas>
+  <Preload all />
+</Canvas>
   );
 };
 
