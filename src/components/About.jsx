@@ -5,71 +5,115 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
-import profilePic from "../assets/profile.jpeg"; 
+import { fadeIn } from "../utils/motion";
+import profilePic from "../assets/profile.jpeg";
+import useIsMobile from "../hooks/useIsMobile";
 
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[250px] w-full">
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
-    >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary rounded-[20px] py-5 px-12 h-[240px] md:min-h-[280px] flex justify-evenly items-center flex-col"
+const ServiceCard = ({ index, title, icon }) => {
+  const isMobile = useIsMobile();
+
+  if (isMobile) {
+    return (
+      <Tilt
+        className="xs:w-[250px] w-full"
+        tiltMaxAngleX={15} 
+        tiltMaxAngleY={15}
+        perspective={1000}
+        transitionSpeed={400}
+        scale={1.03} 
+        glareEnable={false} 
       >
-        <img
-          src={icon}
-          alt="web-development"
-          className="w-16 h-16 object-contain"
-        />
-        <h3 className="text-white text-[20px] font-bold text-center">
-          {title}
-        </h3>
-      </div>
-    </motion.div>
-  </Tilt>
-);
+        <div className="green-pink-gradient p-[1px] rounded-[20px] shadow-card">
+          <div className="bg-tertiary rounded-[20px] py-5 px-12 h-[280px] flex justify-evenly items-center flex-col">
+            <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+            <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+          </div>
+        </div>
+      </Tilt>
+    );
+  }
+
+  return (
+    <Tilt className="xs:w-[250px] w-full">
+      <motion.div
+        variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
+        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+      >
+        <div className="bg-tertiary rounded-[20px] py-5 px-12 h-[240px] flex justify-evenly items-center flex-col">
+          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+          <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+        </div>
+      </motion.div>
+    </Tilt>
+  );
+};
 
 const About = () => {
+  const isMobile = useIsMobile();
+
   return (
     <>
-      <motion.div className="pt-12 md:pt-0 flex flex-col md:flex-row items-center md:items-start gap-10 mt-6">
+      {isMobile ? (
+        // Mobile version: simple div, no motion
+        <div className="pt-[5rem] flex flex-col items-center gap-6">
+          <div className="flex-1">
+            <p className={styles.sectionSubText}>Introduction</p>
+            <h2 className={styles.sectionHeadText}>Overview.</h2>
+
+            <img
+              src={profilePic}
+              alt="profile"
+              className="w-72 h-72 rounded-3xl object-cover shadow-2xl border-4 border-purple-500 my-6 mx-auto"
+            />
+
+            <p className="mt-4 text-secondary text-[17px] leading-[30px] text-justify max-w-xl mx-auto">
+              I'm a Software Engineering student and frontend developer with a
+              passion for crafting sleek, responsive web interfaces using React,
+              Tailwind CSS, and JavaScript. I'm driven by a desire to turn creative
+              ideas into smooth digital experiences. Currently seeking internship
+              opportunities to apply my skills in real-world projects, grow as a
+              developer, and contribute to impactful teams.
+            </p>
+          </div>
+        </div>
+      ) : (
+        // Desktop version: motion + tilt
         <motion.div
-          variants={fadeIn("left", "spring", 0.1, 1)}
-          className="flex-1 md:order-1 order-2"
+          className="pt-12 md:pt-0 flex flex-col md:flex-row items-center md:items-start gap-10 mt-6"
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
         >
-          <p className={styles.sectionSubText}>Introduction</p>
-          <h2 className={styles.sectionHeadText}>Overview.</h2>
+          <motion.div
+            className="flex-1"
+            variants={fadeIn("left", "spring", 0.1, 1)}
+          >
+            <p className={styles.sectionSubText}>Introduction</p>
+            <h2 className={styles.sectionHeadText}>Overview.</h2>
+
+            <p className="mt-4 text-secondary text-[17px] leading-[30px] text-justify max-w-xl">
+              I'm a Software Engineering student and frontend developer with a passion
+              for crafting sleek, responsive web interfaces using React, Tailwind CSS,
+              and JavaScript. I'm driven by a desire to turn creative ideas into smooth
+              digital experiences. Currently seeking internship opportunities to apply
+              my skills in real-world projects, grow as a developer, and contribute to
+              impactful teams.
+            </p>
+          </motion.div>
+
           <motion.img
             src={profilePic}
             alt="profile"
-            className="w-96 h-96 md:hidden rounded-3xl object-cover shadow-2xl border-4 border-purple-500 order-1  my-8 bg-[red]"
+            className="w-72 h-80 md:w-[23rem] md:h-[27rem] rounded-3xl object-cover shadow-2xl border-4 border-purple-500"
             variants={fadeIn("right", "spring", 0.3, 1)}
           />
-          <p className="mt-4 text-secondary text-[17px] leading-[30px] text-justify max-w-xl order-3">
-            I'm a Software Engineering student and frontend developer with a
-            passion for crafting sleek, responsive web interfaces using React,
-            Tailwind CSS, and JavaScript. I'm driven by a desire to turn
-            creative ideas into smooth digital experiences. Currently seeking
-            internship opportunities to apply my skills in real-world projects,
-            grow as a developer, and contribute to impactful teams.
-          </p>
         </motion.div>
 
-        <motion.img
-          src={profilePic}
-          alt="profile"
-          className="hidden md:block w-96 h-96 md:w-[23rem] md:h-[27rem] rounded-3xl object-cover shadow-2xl border-4 border-purple-500 md:order-2"
-          variants={fadeIn("right", "spring", 0.3, 1)}
-        />
-      </motion.div>
+      )}
 
-      {/* Services Section */}
       <div className="mt-8 md:mt-20 flex flex-wrap gap-6 md:gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
@@ -80,3 +124,4 @@ const About = () => {
 };
 
 export default SectionWrapper(About, "about");
+

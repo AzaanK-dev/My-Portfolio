@@ -1,3 +1,4 @@
+import { three } from "maath";
 import {
   mobile,
   backend,
@@ -25,13 +26,24 @@ import {
   facebook, 
   github, 
   instagram, 
-  linkedin
+  linkedin,
+  expressjs,
+  dsa,
+  mongodb,
+  nodejs,
+  nextjs,
+  threejs,
+  git
 } from "../assets";
 
 export const navLinks = [
   {
     id: "about",
     title: "About",
+  },
+  {
+    id: "skills",
+    title: "Skills",
   },
   {
     id: "work",
@@ -62,138 +74,105 @@ const services = [
   },
 ];
 
-
-const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Firebase",
-    icon: firebase,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Java OOP",
-    icon: java,
-  },
-  {
-    name: "C++",
-    icon: cProg,
-  },
-];
-
-const qualifications = [
-  {
-    title: "UBIT, University of Karachi",
-    company_name: "Gulshan-e-Iqbal, Karachi",
-    icon: ubit,
-    iconBg: "#383E56",
-    date: "January 2025 - Present",
-    points: [
-      "Pursuing a Bachelor's degree in Software Engineering from University of Karachi.",
-      "Developing a solid understanding of both theoretical and practical aspects of software engineering.",
-      "Actively enhancing technical and teamwork skills through academic projects, assignments, and collaborative learning.",
-    ],
-  },
-  {
-    title: "Techzone Learning Institute",
-    company_name: "Sharah-e-Faisal, Karachi",
-    icon: techzone,
-    iconBg: "#E6DEDD",
-    date: "October 2024 - May 2025",
-    points: [
-      "Completed a Frontend Development course from TechZone Learning, focusing on modern web technologies and real-world project building.",
-      "Built interactive and responsive web pages using HTML, CSS, JavaScript, React, and Tailwind CSS.",
-      "Strengthened understanding of responsiveness, reusable components, and clean layout structures", 
-    ],
-  },
-  {
-    title: "Cadet College Fateh Jang",
-    company_name: "Fateh Jang, Rawalpindi",
-    icon: ccfj,
-    iconBg: "#383E56",
-    date: "August 2022 - July 2024",
-    points: [
-      "Completed Pre-Engineering from Cadet College Fateh Jang, a reputed residential institution known for academic excellence and discipline.",  
-      "Secured 86% marks in HSSC (FSc Pre-Engineering), with a strong performance in Mathematics.",
-      "Gained valuable experience in leadership, discipline, and teamwork through cadet-based educational and extracurricular activities." 
-    ],
-  },
-];
-
 const skills = [
   {
     skill: "Building beautiful, responsive, and modern websites using semantic HTML for structured layouts.",
     name: "HTML",
     proficiency: "Expert",
+    percent: 90,
     image: html,
   },
   {
     skill: "Crafting stylish, responsive designs and smooth UI experiences using CSS & Tailwind.",
     name: "CSS & Tailwind",
     proficiency: "Expert",
+    percent: 90,
     image: css,
   },
   {
     skill: "Creating dynamic, interactive, and efficient web apps with modern JavaScript practices.",
     name: "JavaScript",
     proficiency: "Advanced",
+    percent: 85,
     image: javascript,
   },
   {
     skill: "Developing scalable and reusable components with React and state management techniques.",
     name: "React.js",
     proficiency: "Advanced",
+    percent: 80,
     image: reactjs,
   },
   {
     skill: "Implementing secure authentication, real-time data, and backend services using Firebase.",
     name: "Firebase",
     proficiency: "Intermediate",
+    percent: 65,
     image: firebase,
   },
   {
     skill: "Applying OOP principles and strong problem-solving to create efficient Java applications.",
     name: "Java OOP",
     proficiency: "Intermediate",
+    percent: 75,
     image: java,
   },
   {
     skill: "Developing logical programs and mastering problem-solving with C++ fundamentals.",
     name: "C++",
     proficiency: "Intermediate",
+    percent: 72,
     image: cProg,
   },
   {
     skill: "Designing UI prototypes and wireframes to visualize project ideas with Figma.",
     name: "Figma",
     proficiency: "Beginner",
+    percent: 25,
     image: figma,
   },
   {
     skill: "Efficient document management, spreadsheet operations, and presentation designs using MS Office.",
     name: "MS Office",
     proficiency: "Advanced",
+    percent: 90,
     image: msoffice,
   },
 ];
 
+const techStack = {
+  frontend: [
+    { name: "HTML5", icon: html },
+    { name: "CSS3", icon: css },
+    { name: "JavaScript", icon: javascript },
+    { name: "React", icon: reactjs },
+    { name: "Tailwind CSS", icon: tailwind },
+  ],
+
+  backend: [
+    { name: "Firebase", icon: firebase },
+  ],
+
+  uiux: [
+    // add later if needed (Figma, Canva, etc.)
+  ],
+
+  tools: [
+    { name: "Java (OOP)", icon: java },
+    { name: "C++", icon: cProg },
+  ],
+};
+
+const learningTechs = [
+  { name: "Node.js", icon: nodejs },
+  { name: "Express.js", icon: expressjs },
+  { name: "MongoDB", icon: mongodb },
+  { name: "DSA", icon: dsa },
+  { name: "Next.js", icon: nextjs },
+  { name: "Three.js", icon: threejs },
+  { name: "GitHub Actions", icon: git },
+  { name: "Figma Advanced", icon: figma },
+];
 
 const projects = [
   {
@@ -323,6 +302,45 @@ const projects = [
   },
 ];
 
+const qualifications = [
+  {
+    title: "UBIT, University of Karachi",
+    company_name: "Gulshan-e-Iqbal, Karachi",
+    icon: ubit,
+    iconBg: "#383E56",
+    date: "January 2025 - Present",
+    points: [
+      "Pursuing a Bachelor's degree in Software Engineering from University of Karachi.",
+      "Developing a solid understanding of both theoretical and practical aspects of software engineering.",
+      "Actively enhancing technical and teamwork skills through academic projects, assignments, and collaborative learning.",
+    ],
+  },
+  {
+    title: "Techzone Learning Institute",
+    company_name: "Sharah-e-Faisal, Karachi",
+    icon: techzone,
+    iconBg: "#E6DEDD",
+    date: "October 2024 - May 2025",
+    points: [
+      "Completed a Frontend Development course from TechZone Learning, focusing on modern web technologies and real-world project building.",
+      "Built interactive and responsive web pages using HTML, CSS, JavaScript, React, and Tailwind CSS.",
+      "Strengthened understanding of responsiveness, reusable components, and clean layout structures", 
+    ],
+  },
+  {
+    title: "Cadet College Fateh Jang",
+    company_name: "Fateh Jang, Rawalpindi",
+    icon: ccfj,
+    iconBg: "#383E56",
+    date: "August 2022 - July 2024",
+    points: [
+      "Completed Pre-Engineering from Cadet College Fateh Jang, a reputed residential institution known for academic excellence and discipline.",  
+      "Secured 86% marks in HSSC (FSc Pre-Engineering), with a strong performance in Mathematics.",
+      "Gained valuable experience in leadership, discipline, and teamwork through cadet-based educational and extracurricular activities." 
+    ],
+  },
+];
+
 const socialLinks = [
   {
     name: "github",
@@ -351,4 +369,4 @@ const socialLinks = [
 ];
 
 
-export { services, technologies, qualifications, skills, projects, socialLinks };
+export { services, techStack, learningTechs, qualifications, skills, projects, socialLinks };

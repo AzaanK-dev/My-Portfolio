@@ -2,6 +2,7 @@ import { EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas } from './canvas'
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import About from "./About";
+import CurrentlyLearn from "./CurrentlyLearn";
 import Tech from "./Tech";
 import Education from "./Education";
 import Works from "./Works";
@@ -15,6 +16,7 @@ export {
   Hero,
   Navbar,
   About,
+  CurrentlyLearn,
   Tech,
   Education,
   Works,

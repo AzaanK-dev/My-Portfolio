@@ -19,6 +19,12 @@ import java from "./tech/java.png";
 import cProg from "./tech/cProg.png";
 import firebase from "./tech/firebase.png";
 import msoffice from "./tech/msoffice.png";
+import expressjs from "./tech/expressjs.png";
+import nodejs from "./tech/nodejs.png";
+import mongodb from "./tech/mongodb.png";
+import dsa from "./tech/dsa.png";
+import nextjs from "./tech/nextjs.png";
+import threejs from "./tech/threejs.png";
 
 import ccfj from "./company/ccfj.png";
 import techzone from "./company/techzone.png";
@@ -56,6 +62,12 @@ export {
   cProg,
   firebase,
   msoffice,
+  expressjs,
+  nodejs,
+  mongodb,
+  dsa,
+  nextjs,
+  threejs,
   shophub,
   aerocasta,
   blogzaan,
