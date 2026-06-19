@@ -16,12 +16,12 @@ const ServiceCard = ({ index, title, icon }) => {
     return (
       <Tilt
         className="xs:w-[250px] w-full"
-        tiltMaxAngleX={15} 
+        tiltMaxAngleX={15}
         tiltMaxAngleY={15}
         perspective={1000}
         transitionSpeed={400}
-        scale={1.03} 
-        glareEnable={false} 
+        scale={1.03}
+        glareEnable={false}
       >
         <div className="green-pink-gradient p-[1px] rounded-[20px] shadow-card">
           <div className="bg-tertiary rounded-[20px] py-5 px-12 h-[280px] flex justify-evenly items-center flex-col">
@@ -58,7 +58,7 @@ const About = () => {
     <>
       {isMobile ? (
         // Mobile version: simple div, no motion
-        <div className="pt-[5rem] flex flex-col items-center gap-6">
+        <div className="pt-[9rem] flex flex-col items-center gap-6">
           <div className="flex-1">
             <p className={styles.sectionSubText}>Introduction</p>
             <h2 className={styles.sectionHeadText}>Overview.</h2>
@@ -70,12 +70,12 @@ const About = () => {
             />
 
             <p className="mt-4 text-secondary text-[17px] leading-[30px] text-justify max-w-xl mx-auto">
-              I'm a Software Engineering student and frontend developer with a
-              passion for crafting sleek, responsive web interfaces using React,
-              Tailwind CSS, and JavaScript. I'm driven by a desire to turn creative
-              ideas into smooth digital experiences. Currently seeking internship
-              opportunities to apply my skills in real-world projects, grow as a
-              developer, and contribute to impactful teams.
+              Ambitious Software Engineering undergraduate, building impactful technology solutions that combine
+              strong engineering practices with exceptional user experiences. Experienced in developing scalable
+              applications through internships and self-driven projects, with exposure to the complete software
+              development lifecycle. Open to internship, co-op, and early
+              career opportunities in Software Engineering, Full-Stack Development, Frontend, Backend, 
+              and AI Engineering.
             </p>
           </div>
         </div>
@@ -95,12 +95,13 @@ const About = () => {
             <h2 className={styles.sectionHeadText}>Overview.</h2>
 
             <p className="mt-4 text-secondary text-[17px] leading-[30px] text-justify max-w-xl">
-              I'm a Software Engineering student and frontend developer with a passion
-              for crafting sleek, responsive web interfaces using React, Tailwind CSS,
-              and JavaScript. I'm driven by a desire to turn creative ideas into smooth
-              digital experiences. Currently seeking internship opportunities to apply
-              my skills in real-world projects, grow as a developer, and contribute to
-              impactful teams.
+              Ambitious Software Engineering undergraduate, building impactful technology solutions that combine
+              strong engineering practices with exceptional user experiences. Experienced in developing scalable
+              applications through internships and self-driven projects, with exposure to the complete software
+              development lifecycle. Driven by curiosity, continuous learning, and a problem-solving mindset, with a
+              growing interest in modern software systems and artificial intelligence. Open to internship, co-op, and early
+              career opportunities in Software Engineering, Full-Stack Development, Backend Engineering, Frontend
+              Engineering, and AI Engineering.
             </p>
           </motion.div>
 

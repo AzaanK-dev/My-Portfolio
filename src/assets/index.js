@@ -30,6 +30,8 @@ import ccfj from "./company/ccfj.png";
 import techzone from "./company/techzone.png";
 import ubit from "./company/ubit.png";
 
+import skillnest from "./skillnest.png";
+import echoplay from "./echoplay.png"
 import shophub from "./shophub.png";
 import aerocasta from "./aerocasta.png"
 import blogzaan from "./blogzaan.png";
@@ -50,6 +52,7 @@ export {
   github,
   menu,
   close,
+
   css,
   figma,
   git,
@@ -68,15 +71,20 @@ export {
   dsa,
   nextjs,
   threejs,
+
+  skillnest,
+  echoplay,
   shophub,
   aerocasta,
   blogzaan,
   bakeryweb,
   todoweb,
   bankingSystem,
+
   ccfj,
   techzone,
   ubit,
+  
   linkedin,
   instagram,
   facebook

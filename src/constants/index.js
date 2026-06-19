@@ -4,28 +4,34 @@ import {
   backend,
   creator,
   web,
+
   javascript,
   html,
   css,
   reactjs,
   tailwind,
   figma,
+
+  skillnest,
+  echoplay,
   blogzaan,
   bakeryweb,
   todoweb,
   aerocasta,
   shophub,
   bankingSystem,
+
   ccfj,
   techzone,
   ubit,
+
   java,
   cProg,
   firebase,
   msoffice,
-  facebook, 
-  github, 
-  instagram, 
+  facebook,
+  github,
+  instagram,
   linkedin,
   expressjs,
   dsa,
@@ -57,19 +63,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Frontend Web Developer",
+    title: "Frontend Developer",
     icon: web,
   },
   {
-    title: "React Developer",
+    title: "MERN Developer",
     icon: mobile,
   },
   {
-    title: "Software Developer",
+    title: "Backend Developer",
     icon: backend,
   },
   {
-    title: "UI Design Enthusiast",
+    title: "Full Stack Developer",
     icon: creator,
   },
 ];
@@ -175,6 +181,30 @@ const learningTechs = [
 ];
 
 const projects = [
+
+  {
+    name: "SkillNest",
+    description:
+      "SkillNest is a GitHub-powered developer profile builder that analyzes coding activity, repositories, and contribution history to automatically generate structured, ATS-friendly resumes for recruitment purposes.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "github API",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: skillnest,
+    live_link: "https://skillnest-web.netlify.app/",
+    source_code_link: "https://github.com/AzaanK-dev/SkillNest-Project",
+  },
+  
   {
     name: "Shophub",
     description:
@@ -197,6 +227,30 @@ const projects = [
     live_link: "https://akshophub.netlify.app/",
     source_code_link: "https://github.com/AzaanK-dev/Shophub-Ecommerce-Website-with-React-and-Firebase.git",
   },
+
+  {
+    name: "Echoplay - Backend",
+    description:
+      "Echoplay is a YouTube-like backend system, featuring RESTful APIs for video uploads, authentication, likes, comments, tweets and user interactions with a scalable and modular backend architecture.",
+    tags: [
+      {
+        name: "express",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "node",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: echoplay,
+    live_link: "https://skillnest-web.netlify.app/",
+    source_code_link: "https://github.com/AzaanK-dev/SkillNest-Project",
+  },
+
   {
     name: "Aerocasta",
     description:
@@ -219,6 +273,7 @@ const projects = [
     live_link: "https://aerocasta.netlify.app/",
     source_code_link: "https://github.com/AzaanK-dev/Aerocasta-Weather-Dashboard-with-TailwindCSS-and-JS",
   },
+
   {
     name: "Blogzaan",
     description:
@@ -241,10 +296,11 @@ const projects = [
     live_link: "https://blogzaan.netlify.app/",
     source_code_link: "https://github.com/AzaanK-dev/Blogs-Website-with-React-and-Firebase.git",
   },
+
   {
     name: "BakersnBlessed - UI",
     description:
-    "A simple and elegant Bakery website user interface built using HTML and CSS.It features a modern layout with a homepage banner, product showcase, and a clean, responsive design to highlight bakery items attractively.",
+      "A simple and elegant Bakery website user interface built using HTML and CSS.It features a modern layout with a homepage banner, product showcase, and a clean, responsive design to highlight bakery items attractively.",
     tags: [
       {
         name: "html",
@@ -259,6 +315,7 @@ const projects = [
     live_link: "https://bakersnblessed.netlify.app/",
     source_code_link: "https://github.com/AzaanK-dev/Bakery-Website-UI-with-html-css.git",
   },
+
   {
     name: "Modern todo-list",
     description:
@@ -281,6 +338,7 @@ const projects = [
     live_link: "https://moderntodolistweb.netlify.app/",
     source_code_link: "https://github.com/AzaanK-dev/Modern-Todo-list.git",
   },
+
   {
     name: "Java Banking Console",
     type: "console",
@@ -300,6 +358,7 @@ const projects = [
     live_link: "",
     source_code_link: "https://github.com/AzaanK-dev/OOP-Bank-Management-System",
   },
+
 ];
 
 const qualifications = [
@@ -324,7 +383,7 @@ const qualifications = [
     points: [
       "Completed a Frontend Development course from TechZone Learning, focusing on modern web technologies and real-world project building.",
       "Built interactive and responsive web pages using HTML, CSS, JavaScript, React, and Tailwind CSS.",
-      "Strengthened understanding of responsiveness, reusable components, and clean layout structures", 
+      "Strengthened understanding of responsiveness, reusable components, and clean layout structures",
     ],
   },
   {
@@ -334,9 +393,9 @@ const qualifications = [
     iconBg: "#383E56",
     date: "August 2022 - July 2024",
     points: [
-      "Completed Pre-Engineering from Cadet College Fateh Jang, a reputed residential institution known for academic excellence and discipline.",  
+      "Completed Pre-Engineering from Cadet College Fateh Jang, a reputed residential institution known for academic excellence and discipline.",
       "Secured 86% marks in HSSC (FSc Pre-Engineering), with a strong performance in Mathematics.",
-      "Gained valuable experience in leadership, discipline, and teamwork through cadet-based educational and extracurricular activities." 
+      "Gained valuable experience in leadership, discipline, and teamwork through cadet-based educational and extracurricular activities."
     ],
   },
 ];
