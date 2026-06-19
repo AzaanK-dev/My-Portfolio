@@ -21,8 +21,8 @@ const Computers = ({ isMobile }) => {
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.28 : 0.7}
-        position={isMobile ? [0, -0.5, -1] : [0, -3.9, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        position={isMobile ? [0, -0.5, -1] : [0, -3.9, -1.0]}
+        rotation={[-0.07, -0.6, -0.05]}
       />
     </mesh>
   );
@@ -40,16 +40,21 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px]">
+    <div
+      className="absolute inset-0 w-full h-full"
+      style={{ pointerEvents: "none" }}
+    >
       {isMobile ? (
         <img
-          src={StaticComputer}          // static computer image for mobile
+          src={StaticComputer}
           alt="Static Computer"
-          className="absolute top-40 left-0 w-full h-full object-contain mt-12"
+          className="absolute bottom-[-15px] left-1/2 -translate-x-1/2 w-[100%] max-w-[470px]  object-contain"
+          style={{ pointerEvents: "none" }}
         />
       ) : (
-        <Canvas                              // 3d model for other devices
-          className="absolute top-0 left-0"
+        // Canvas re-enables pointer events so OrbitControls / drag works
+        <Canvas
+          style={{ pointerEvents: "auto" }}
           shadows={false}
           dpr={[1, 1.5]}
           camera={{ position: [20, 3, 5], fov: 25 }}

@@ -12,6 +12,10 @@ import {
   tailwind,
   figma,
 
+  django,
+  sqlite,
+  python,
+
   skillnest,
   echoplay,
   blogzaan,
@@ -153,32 +157,79 @@ const techStack = {
     { name: "JavaScript", icon: javascript },
     { name: "React", icon: reactjs },
     { name: "Tailwind CSS", icon: tailwind },
+    { name: "Next.js", icon: nextjs },
   ],
 
   backend: [
-    { name: "Firebase", icon: firebase },
+    { name: "Express.js", icon: expressjs },
+    { name: "Node.js", icon: nodejs },
+    { name: "Django", icon: django },
   ],
 
-  uiux: [
-    // add later if needed (Figma, Canva, etc.)
+  databases: [
+    { name: "MongoDB", icon: mongodb },
+    { name: "Firebase", icon: firebase },
+    { name: "SQlite", icon: sqlite },
   ],
 
   tools: [
+    { name: "Python", icon: python },
     { name: "Java (OOP)", icon: java },
     { name: "C++", icon: cProg },
   ],
 };
 
 const learningTechs = [
-  { name: "Node.js", icon: nodejs },
-  { name: "Express.js", icon: expressjs },
-  { name: "MongoDB", icon: mongodb },
   { name: "DSA", icon: dsa },
   { name: "Next.js", icon: nextjs },
   { name: "Three.js", icon: threejs },
   { name: "GitHub Actions", icon: git },
   { name: "Figma Advanced", icon: figma },
 ];
+
+const experiences = [
+  {
+    role: "Frontend Developer",
+    company: "Naxasware",
+    type: "Part-time",
+    period: "2026 – Present",
+    location: "Hybrid",
+    accentClass: "text-[#a855f7]",
+    accentHex: "#a855f7",
+    glowHex: "rgba(168,85,247,0.30)",
+    borderHex: "rgba(168,85,247,0.45)",
+    pillBg: "rgba(168,85,247,0.15)",
+    logo: "N",
+    description:
+      "Developed and delivered frontend solutions for end-to-end digital projects, transforming requirements and designs into production-ready user interfaces. ",
+    highlights: [
+      "Built a reusable design system adopted across 3 products",
+      "Utilized Git for version control, enabling efficient collaboration and streamlined development workflows.",
+    ],
+    skills: ["Next.js", "React", "Javascript", "Tailwind CSS"],
+  },
+  {
+    role: "Backend AI Intern",
+    company: "Flyrank AI",
+    type: "Internship",
+    period: "2026 – Present",
+    location: "Remote",
+    accentClass: "text-[#06b6d4]",
+    accentHex: "#06b6d4",
+    glowHex: "rgba(6,182,212,0.30)",
+    borderHex: "rgba(6,182,212,0.45)",
+    pillBg: "rgba(6,182,212,0.15)",
+    logo: "F",
+    description:
+      "Selected as a Backend AI Engineer Intern at Flyrank AI, with the internship scheduled to commence in July 2026.",
+    highlights: [
+      "Will work with international engineering teams on development workflows and code reviews.",
+      "Expected to gain hands-on experience in backend architecture, AI integrations, and modern engineering best practices."
+    ],
+    skills: ["Upcoming ..."],
+  },
+];
+
 
 const projects = [
 
@@ -204,7 +255,7 @@ const projects = [
     live_link: "https://skillnest-web.netlify.app/",
     source_code_link: "https://github.com/AzaanK-dev/SkillNest-Project",
   },
-  
+
   {
     name: "Shophub",
     description:
@@ -428,4 +479,4 @@ const socialLinks = [
 ];
 
 
-export { services, techStack, learningTechs, qualifications, skills, projects, socialLinks };
+export { services, techStack, learningTechs, qualifications, skills, experiences, projects, socialLinks };

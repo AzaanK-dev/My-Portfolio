@@ -44,7 +44,7 @@ const Tech = () => {
       <div className="flex flex-col gap-16">
         <TechCategory title="Frontend" items={techStack.frontend} />
         <TechCategory title="Backend" items={techStack.backend} />
-        <TechCategory title="UI / UX" items={techStack.uiux} />
+        <TechCategory title="Databases" items={techStack.databases} />
         <TechCategory title="Tools & Programming" items={techStack.tools} />
       </div>
     </>

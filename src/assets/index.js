@@ -25,6 +25,9 @@ import mongodb from "./tech/mongodb.png";
 import dsa from "./tech/dsa.png";
 import nextjs from "./tech/nextjs.png";
 import threejs from "./tech/threejs.png";
+import django from "./tech/django.png"
+import sqlite from "./tech/sqlite.png"
+import python from "./tech/python.png"
 
 import ccfj from "./company/ccfj.png";
 import techzone from "./company/techzone.png";
@@ -71,6 +74,9 @@ export {
   dsa,
   nextjs,
   threejs,
+  django,
+  sqlite,
+  python,
 
   skillnest,
   echoplay,

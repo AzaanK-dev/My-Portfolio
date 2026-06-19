@@ -58,7 +58,7 @@ const About = () => {
     <>
       {isMobile ? (
         // Mobile version: simple div, no motion
-        <div className="pt-[9rem] flex flex-col items-center gap-6">
+        <div className="pt-[7rem] flex flex-col items-center gap-6">
           <div className="flex-1">
             <p className={styles.sectionSubText}>Introduction</p>
             <h2 className={styles.sectionHeadText}>Overview.</h2>
