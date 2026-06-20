@@ -10,7 +10,7 @@ const Hero = () => {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
     link.href = "/resume.pdf";
-    link.download = "Azaan_Resume.pdf";
+    link.download = "Azaan_Mehtab_Khan_CV.pdf";
     link.click();
   };
 
