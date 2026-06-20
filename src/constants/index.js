@@ -169,8 +169,8 @@ const skills = [
 const techStack = {
   frontend: [
     { name: "JavaScript", icon: javascript },
-    { name: "React", icon: reactjs },
     { name: "Tailwind CSS", icon: tailwind },
+    { name: "React", icon: reactjs },
     { name: "Next.js", icon: nextjs },
   ],
 
