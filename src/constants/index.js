@@ -186,11 +186,11 @@ const techStack = {
     { name: "SQlite", icon: sqlite },
   ],
 
-  tools: [
-    { name: "Python", icon: python },
-    { name: "Java (OOP)", icon: java },
-    { name: "C++", icon: cProg },
-  ],
+  // tools: [
+  //   { name: "Python", icon: python },
+  //   { name: "Java (OOP)", icon: java },
+  //   { name: "C++", icon: cProg },
+  // ],
 };
 
 const learningTechs = [

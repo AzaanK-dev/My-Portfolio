@@ -45,7 +45,7 @@ const Tech = () => {
         <TechCategory title="Frontend" items={techStack.frontend} />
         <TechCategory title="Backend" items={techStack.backend} />
         <TechCategory title="Databases" items={techStack.databases} />
-        <TechCategory title="Tools & Programming" items={techStack.tools} />
+        {/* <TechCategory title="Tools & Programming" items={techStack.tools} /> */}
       </div>
     </>
   );
