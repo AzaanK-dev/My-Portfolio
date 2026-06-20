@@ -143,7 +143,7 @@ const Works = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => setIsInWorkSection(entry.isIntersecting),
-      { threshold: 0.21 }
+      { threshold: isMobile ? 0 : 0.21 } // Adjust threshold for mobile vs desktop
     );
     if (workRef.current) observer.observe(workRef.current);
     return () => observer.disconnect();

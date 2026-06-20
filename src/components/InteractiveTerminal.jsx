@@ -46,7 +46,8 @@ const COMMANDS = {
         "│  03  Echoplay        — Youtube-style backend    │",
         "│  04  Aerocasta       — Weather dashboard        │",
         "│  05  Blogzaan        — Blogs website            │",
-        "│  06  Java Banking    — Console app              │",
+        "│  06  Mini Git        — Version control app      │",
+        "│  07  Java Banking    — Console app              │",
         "└─────────────────────────────────────────────────┘",
     ],
     exp: () => [
