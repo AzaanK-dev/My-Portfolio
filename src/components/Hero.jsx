@@ -88,7 +88,7 @@ const Hero = () => {
 
       <section className="relative w-full min-h-screen mx-auto flex items-center">
 
-        <div className={`w-full max-w-7xl mx-auto ${styles.paddingX} flex flex-col lg:flex-row items-center gap-10 pt-24 pb-10`}>
+        <div className={`w-full max-w-7xl mx-auto ${styles.paddingX} flex flex-col lg:flex-row items-center gap-10 pt-28 pb-10`}>
 
           {/* ── LEFT: text + CTA ── */}
           <div className="flex flex-row items-start gap-5 flex-1 min-w-0">
