@@ -295,6 +295,7 @@ const projects = [
 
   {
     name: "Echoplay - Backend",
+    type: "console",
     description:
       "Echoplay is a YouTube-like backend system, featuring RESTful APIs for video uploads, authentication, likes, comments, tweets and user interactions with a scalable and modular backend architecture.",
     tags: [
@@ -312,8 +313,8 @@ const projects = [
       },
     ],
     image: echoplay,
-    live_link: "https://skillnest-web.netlify.app/",
-    source_code_link: "https://github.com/AzaanK-dev/SkillNest-Project",
+    live_link: "",
+    source_code_link: "https://github.com/AzaanK-dev/Backend-Project",
   },
 
   {
