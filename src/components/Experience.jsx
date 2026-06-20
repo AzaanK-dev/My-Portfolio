@@ -50,7 +50,7 @@ const ExperienceCard = ({ index, exp }) => {
                 fontFamily: "monospace",
               }}
             >
-              {exp.logo}
+              <img src={exp.logo} alt="" />
             </div>
 
             <div>

@@ -29,6 +29,9 @@ import django from "./tech/django.png"
 import sqlite from "./tech/sqlite.png"
 import python from "./tech/python.png"
 
+import naxasware from "./company/naxasware.png";
+import flyrank from "./company/flyrank.png";
+
 import ccfj from "./company/ccfj.png";
 import techzone from "./company/techzone.png";
 import ubit from "./company/ubit.png";
@@ -78,6 +81,9 @@ export {
   sqlite,
   python,
 
+  naxasware,
+  flyrank,
+
   skillnest,
   echoplay,
   shophub,
@@ -86,6 +92,8 @@ export {
   bakeryweb,
   todoweb,
   bankingSystem,
+
+
 
   ccfj,
   techzone,

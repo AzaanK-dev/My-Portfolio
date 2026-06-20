@@ -25,6 +25,9 @@ import {
   shophub,
   bankingSystem,
 
+  naxasware,
+  flyrank,
+
   ccfj,
   techzone,
   ubit,
@@ -90,68 +93,77 @@ const services = [
 
 const skills = [
   {
-    skill: "Building beautiful, responsive, and modern websites using semantic HTML for structured layouts.",
-    name: "HTML",
-    proficiency: "Expert",
-    percent: 90,
-    image: html,
+    skill: "Building modern, scalable, and responsive web applications using React and Next.js with component-driven architecture.",
+    name: "React & Next.js",
+    proficiency: "Advanced",
+    percent: 85,
+    image: reactjs,
   },
   {
-    skill: "Crafting stylish, responsive designs and smooth UI experiences using CSS & Tailwind.",
-    name: "CSS & Tailwind",
-    proficiency: "Expert",
-    percent: 90,
-    image: css,
+    skill: "Developing RESTful APIs, server-side logic, authentication systems, database integrations, and scalable backend services.",
+    name: "Node.js & Express",
+    proficiency: "Intermediate",
+    percent: 75,
+    image: nodejs,
   },
   {
-    skill: "Creating dynamic, interactive, and efficient web apps with modern JavaScript practices.",
-    name: "JavaScript",
+    skill: "Designing and managing databases, handling queries, and structuring data with MongoDB and SQLite.",
+    name: "MongoDB & SQLite",
+    proficiency: "Intermediate",
+    percent: 70,
+    image: mongodb,
+  },
+  {
+    skill: "Creating robust web applications, streamlining processes through automation, and building maintainable backend solutions.",
+    name: "Python & Django",
+    proficiency: "Intermediate",
+    percent: 65,
+    image: python,
+  },
+  {
+    skill: "Crafting scalable user interfaces, smooth interactions, and mobile-friendly designs using JavaScript and Tailwind CSS.",
+    name: "JavaScript & Tailwind",
     proficiency: "Advanced",
     percent: 85,
     image: javascript,
   },
   {
-    skill: "Developing scalable and reusable components with React and state management techniques.",
-    name: "React.js",
-    proficiency: "Advanced",
-    percent: 80,
-    image: reactjs,
-  },
-  {
-    skill: "Implementing secure authentication, real-time data, and backend services using Firebase.",
+    skill: "Implementing secure authentication, cloud databases, and data management with Auth and Firestore.",
     name: "Firebase",
     proficiency: "Intermediate",
-    percent: 65,
+    percent: 60,
     image: firebase,
   },
   {
-    skill: "Applying OOP principles and strong problem-solving to create efficient Java applications.",
-    name: "Java OOP",
+    skill: "Building well-structured, accessible, and responsive websites using semantic HTML and CSS while ensuring clean layouts.",
+    name: "HTML & CSS",
+    proficiency: "Expert",
+    percent: 90,
+    image: html,
+  },
+  {
+    skill: "Solving algorithmic problems using efficient data structures, and strengthening problem-solving skills through C++ and DSA concepts.",
+    name: "C++ (DSA)",
+    proficiency: "Intermediate",
+    percent: 75,
+    image: cProg,
+  },
+  {
+    skill: "Applying object-oriented programming principles and developing robust console-applications with Java.",
+    name: "Java (OOP)",
     proficiency: "Intermediate",
     percent: 75,
     image: java,
   },
   {
-    skill: "Developing logical programs and mastering problem-solving with C++ fundamentals.",
-    name: "C++",
-    proficiency: "Intermediate",
-    percent: 72,
-    image: cProg,
-  },
-  {
-    skill: "Designing UI prototypes and wireframes to visualize project ideas with Figma.",
-    name: "Figma",
-    proficiency: "Beginner",
-    percent: 25,
-    image: figma,
-  },
-  {
-    skill: "Efficient document management, spreadsheet operations, and presentation designs using MS Office.",
+    skill: "Managing documents, spreadsheets, reports, and presentations efficiently using Microsoft Office tools.",
     name: "MS Office",
     proficiency: "Advanced",
     percent: 90,
     image: msoffice,
   },
+
+
 ];
 
 const techStack = {
@@ -201,7 +213,7 @@ const experiences = [
     glowHex: "rgba(168,85,247,0.30)",
     borderHex: "rgba(168,85,247,0.45)",
     pillBg: "rgba(168,85,247,0.15)",
-    logo: "N",
+    logo: naxasware,
     description:
       "Developed and delivered frontend solutions for end-to-end digital projects, transforming requirements and designs into production-ready user interfaces. ",
     highlights: [
@@ -221,7 +233,7 @@ const experiences = [
     glowHex: "rgba(6,182,212,0.30)",
     borderHex: "rgba(6,182,212,0.45)",
     pillBg: "rgba(6,182,212,0.15)",
-    logo: "F",
+    logo: flyrank,
     description:
       "Selected as a Backend AI Engineer Intern at Flyrank AI, with the internship scheduled to commence in July 2026.",
     highlights: [
