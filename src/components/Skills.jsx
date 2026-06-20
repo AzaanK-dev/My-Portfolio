@@ -386,7 +386,7 @@ const Skills = () => {
         @media (max-width: 640px) {
           .slider-track::before,
           .slider-track::after { width: 40px; }
-          .slider-btn { width: 32px; height: 32px; font-size: 18px; }
+          .slider-btn { width: 32px; height: 32px; font-size: 32px; }
         }
       `}</style>
 
